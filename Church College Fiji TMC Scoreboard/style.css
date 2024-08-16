@@ -1,0 +1,67 @@
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for display board table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #0dac8a; /* Border color for the whole table */
+}
+
+/* Style for table cells */
+td {
+    border: 1px solid #56e380; /* Border color for individual cells */
+    padding: 10px;
+}
+
+/* Style for table headers if you use them */
+th {
+    border: 2px solid #000; /* Border color for headers */
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.timer {
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.controls input, .controls button {
+    margin: 5px;
+}
+
+.bordered {
+    border: 2px solid #7aff7d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#schoolPointsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    margin-top: 20px;
+}
+
+.school {
+    flex: 1 1 calc(16.66% - 20px); /* 6 items per row, with gap adjustment */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.points-display {
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+}

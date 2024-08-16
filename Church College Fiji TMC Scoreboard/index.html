@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Mathematics Competition (TMC) Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Mathematics Competition (TMC) Scoreboard</h1>
+        
+        <div id="main-timer" class="timer">00:00</div>
+        <div id="main-controls" class="controls">
+            <input type="number" id="mainMinutesInput" placeholder="Minutes" min="0">
+            <input type="number" id="mainSecondsInput" placeholder="Seconds" min="0" max="59">
+            <button onclick="setMainTimer()">Set Main Timer</button>
+            <button onclick="startMainTimer()">Start</button>
+            <button onclick="pauseMainTimer()">Pause</button>
+            <button onclick="resetMainTimer()">Reset</button>
+        </div>
+
+        <div id="school-controls" class="controls">
+            <input type="text" id="schoolName" placeholder="School Name">
+            <button onclick="addSchool()">Add School</button>
+            <div id="award-all-controls" class="controls">
+                <button onclick="awardPointsToAllSchools(5)">Award +5 Points to All Schools</button>
+                <button onclick="awardPointsToAllSchools(-5)">Award -5 Points to All Schools</button>
+            </div>
+        </div>
+
+        <ul id="scoreboard"></ul>
+        
+        <button onclick="openDisplay()">Open Display</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
